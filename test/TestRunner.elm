@@ -6,7 +6,7 @@ import KakuroTest
 
 tests : Test
 tests =
-  Kakuro.tests
+  KakuroTest.tests
 
 
 main : Program Never

@@ -7,8 +7,8 @@ import Kakuro exposing (..)
 tests : Test
 tests =
     suite "A Test Suite"
-        [ test "Addition"
-            <| assertEqual (3 + 7) 10
-        , test "This test should fail"
-            <| assert False
+        [ test "empty"
+            <| assertEqual "  ----- " draw(empty)
+        , test "across"
+            <| assert " --/3 " draw(a(3))
         ]
